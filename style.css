@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  background-color: #EEECEB;
+  font-family: "Source Code Pro", monospace;
+}
+
+.top_profile {
+  background-color: #EEECEB;
+  background-color: white;
+  border-bottom-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+}
+.top_profile nav {
+  display: none;
+}
+.top_profile .profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+  background-color: #EEECEB;
+}
+.top_profile .profile img {
+  width: 10em;
+  height: 10em;
+  border-radius: 20em;
+  border: 4px solid #dadada;
+  margin-top: 6rem;
+}
+.top_profile .profile h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 3.1rem;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+}
+.top_profile .profile button {
+  background-color: #242424;
+  color: white;
+  font-size: 1.1em;
+  padding: 1.3em 2.7em;
+  border-radius: 10em;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.top_profile .marque {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+.top_profile .marque i {
+  font-size: 3em;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.top_profile .marque .fa-github {
+  display: none;
+}
+.top_profile .marque .fa-wordpress {
+  display: none;
+}
+.top_profile .marque .fa-node {
+  display: none;
+}
+.top_profile .marque .fa-docker {
+  display: none;
+}
+
+.section-two .collab {
+  margin: 2rem;
+  position: relative;
+  border-bottom: 0.4px solid #242424;
+}
+.section-two .collab h1 {
+  font-size: 2em;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.section-two .collab button {
+  color: #242424;
+  background-color: white;
+  padding: 1.5em 3em;
+  font-weight: 600;
+  border: 1px solid #242424;
+  border-radius: 10em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  position: absolute;
+  transform: translate(50%, -20%);
+  rotate: -15deg;
+}
+.section-two .split-div {
+  display: flex;
+  padding: 2rem;
+}
+.section-two .split-div .div-one {
+  pad: 1em;
+}
+.section-two .split-div .div-one i {
+  font-size: 4em;
+  margin-top: 4rem;
+  margin-bottom: 2.6rem;
+}
+.section-two .split-div .div-one h1 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 2.6rem;
+  font-family: "Source Code Pro", monospace;
+}
+.section-two .split-div .div-one p {
+  font-size: 1.2em;
+  color: #242424;
+  margin-bottom: 2.6rem;
+  font-family: "Source Code Pro", monospace;
+}
+.section-two .split-div .div-two {
+  padding: 1em;
+}
+.section-two .split-div .div-two i {
+  font-size: 3em;
+  margin-top: 4rem;
+  margin-bottom: 2.6rem;
+}
+.section-two .split-div .div-two h1 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 2.6rem;
+  font-family: "Source Code Pro", monospace;
+}
+.section-two .split-div .div-two p {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2em;
+  color: #242424;
+  margin-bottom: 2.6rem;
+}
+.section-two .split-div .div-three {
+  display: none;
+}
+.section-two .split-div .div-four {
+  display: none;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-top-right-radius: 6rem;
+  border-top-left-radius: 6rem;
+}
+footer img {
+  width: 10em;
+  height: 10em;
+  border-radius: 20em;
+  margin-top: 6rem;
+  border: 2px solid #dadada;
+}
+footer h1 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 3.1rem;
+  text-align: center;
+}
+footer .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+footer .contact .email {
+  background-color: #242424;
+  color: white;
+  font-size: 1.1em;
+  padding: 1em 2em;
+  border-radius: 10em;
+  border: 4px solid #dadada;
+}
+footer .contact .wp {
+  background-color: white;
+  color: #242424;
+  font-size: 1.1em;
+  padding: 1em 2em;
+  border-radius: 10em;
+  border: 4px solid #dadada;
+}
+
+@media (min-width: 601px) {
+  .top_profile nav {
+    background-color: #EEECEB;
+    padding: 0.4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top_profile nav .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+  }
+  .top_profile nav .left-nav .gmail {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+    background-color: #c1c1c1;
+    gap: 0.6em;
+    border-radius: 8em;
+  }
+  .top_profile nav .left-nav .gmail p {
+    font-size: 0.8em;
+    font-family: "Source Code Pro", monospace;
+  }
+  .top_profile nav .left-nav .gmail button {
+    font-size: 0.8em;
+    background-color: white;
+    padding: 0.4rem 1.6rem;
+    border-radius: 10em;
+    border: 3px solid #dadada;
+  }
+  .top_profile nav .left-nav button {
+    font-size: 0.8em;
+    background-color: white;
+    padding: 0.4rem 1.6rem;
+    border-radius: 10em;
+    border: 3px solid #dadada;
+    font-family: "Source Code Pro", monospace;
+  }
+  .top_profile nav .right-nav a {
+    font-size: 0.8em;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    text-decoration: none;
+    color: #242424;
+    font-family: "Source Code Pro", monospace;
+  }
+  .top_profile .marque {
+    gap: 6em;
+  }
+  .top_profile .marque .fa-github {
+    display: block;
+  }
+  .top_profile .marque .fa-wordpress {
+    display: block;
+  }
+  .top_profile .marque .fa-node {
+    display: block;
+  }
+  .top_profile .marque .fa-docker {
+    display: block;
+  }
+}
+.section-two {
+  padding: 0 6rem;
+}
+.section-two .collab h1 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+.section-two .collab button {
+  color: #242424;
+  background-color: white;
+  padding: 1.5em 3em;
+  font-weight: 600;
+  border: 1px solid #242424;
+  border-radius: 10em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  rotate: -15deg;
+}
+.section-two .split-div {
+  padding: 0 5rem;
+  padding-bottom: 5rem;
+}
+.section-two .split-div .div-one {
+  padding: 1em;
+}
+.section-two .split-div .div-one i {
+  font-size: 2em;
+  margin-top: 4rem;
+  margin-bottom: 2.6rem;
+}
+.section-two .split-div .div-one h1 {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.section-two .split-div .div-one p {
+  font-size: 0.7em;
+  color: #242424;
+  margin-bottom: 2.6rem;
+}
+.section-two .split-div .div-two {
+  padding: 1em;
+}
+.section-two .split-div .div-two i {
+  font-size: 2em;
+  margin-top: 4rem;
+  margin-bottom: 2.6rem;
+}
+.section-two .split-div .div-two h1 {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.section-two .split-div .div-two p {
+  font-size: 0.7em;
+  color: #242424;
+  margin-bottom: 2.6rem;
+}
+.section-two .split-div .div-three {
+  padding: 1em;
+  display: block;
+}
+.section-two .split-div .div-three i {
+  font-size: 2em;
+  margin-top: 4rem;
+  margin-bottom: 2.6rem;
+}
+.section-two .split-div .div-three h1 {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-family: "Source Code Pro", monospace;
+}
+.section-two .split-div .div-three p {
+  font-size: 0.7em;
+  color: #242424;
+  margin-bottom: 2.6rem;
+  font-family: "Source Code Pro", monospace;
+}
+.section-two .split-div .div-four {
+  display: block;
+  padding: 1em;
+}
+.section-two .split-div .div-four i {
+  font-size: 2em;
+  margin-top: 4rem;
+  margin-bottom: 2.6rem;
+}
+.section-two .split-div .div-four h1 {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-family: "Source Code Pro", monospace;
+}
+.section-two .split-div .div-four p {
+  font-size: 0.7em;
+  color: #242424;
+  margin-bottom: 2.6rem;
+  font-family: "Source Code Pro", monospace;
+}/*# sourceMappingURL=style.css.map */

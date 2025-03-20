@@ -1,0 +1,391 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    background-color: #EEECEB;
+    font-family: "Source Code Pro", monospace;
+}
+.top_profile{
+    background-color: #EEECEB;
+    nav{
+        display: none;
+    }
+    .profile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom-right-radius: 6rem;
+        border-bottom-left-radius: 6rem;
+        background-color: #EEECEB;
+        img{
+            width: 10em;
+            height: 10em;
+            border-radius: 20em;
+            border: 4px solid #dadada;
+            margin-top: 6rem;
+        }
+        h1{
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-top: 3.1rem;
+            text-align: center;
+            font-family: "Source Code Pro", monospace;
+        }
+        button{
+            background-color: #242424;
+            color: white;
+            font-size: 1.1em;
+            padding: 1.3em 2.7em;
+            border-radius: 10em;
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+            
+        }
+
+    }
+    .marque{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+        
+        i{
+            font-size: 3em;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            
+        }
+        .fa-github{
+            display: none;
+        }
+        .fa-wordpress{
+            display: none;
+        }
+        .fa-node{
+            display: none;
+        }
+        .fa-docker{
+            display: none;
+        }
+    }
+    background-color: white;
+    border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+    
+}
+.section-two{
+    .collab{
+        margin: 2rem;
+        h1{
+            font-size: 2em;
+            font-family: "Source Code Pro", monospace;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            
+        }
+        button{
+            color: #242424;
+            background-color: white;
+            padding: 1.5em 3em;
+            font-weight: 600;
+            border: 1px solid #242424;
+            border-radius: 10em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            position:absolute;
+        
+            transform: translate(50%,-20%);
+            rotate: (-15deg);
+          
+        }
+        position: relative;
+        border-bottom: 0.4px solid #242424;
+    }
+    .split-div{
+        display: flex;
+        padding: 2rem;
+        .div-one{
+            pad: 1em;
+            i{
+                font-size: 4em;
+                margin-top:4rem;
+                margin-bottom: 2.6rem;
+            }
+            h1{
+                font-size: 2em;
+                font-weight: 500;
+                margin-bottom: 2.6rem;
+                font-family: "Source Code Pro", monospace;
+            }
+            p{
+                font-size: 1.2em;
+                color: #242424;
+                margin-bottom: 2.6rem;
+                font-family: "Source Code Pro", monospace;
+            }
+        }
+        .div-two{
+            padding: 1em;
+            i{
+                font-size: 3em;
+                margin-top:4rem;
+                margin-bottom: 2.6rem;
+            }
+            h1{
+                font-size: 2em;
+                font-weight: 500;
+                margin-bottom: 2.6rem;
+                font-family: "Source Code Pro", monospace;
+            }
+            p{
+                font-family: "Source Code Pro", monospace;
+                font-size: 1.2em;
+                color: #242424;
+                margin-bottom: 2.6rem;
+            }
+        }
+        .div-three{
+            display: none;
+        }
+        .div-four{
+            display: none;
+        }
+    }
+}
+footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-top-right-radius: 6rem;
+    border-top-left-radius: 6rem;
+    img{
+        width: 10em;
+        height: 10em;
+        border-radius: 20em;
+        margin-top: 6rem;
+        border: 2px solid #dadada;
+    }
+    h1{
+        font-family: "Source Code Pro", monospace;
+        font-size: 2.5em;
+        font-weight: 600;
+        margin-top: 3.1rem;
+        text-align: center;
+    }
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap: 1.2rem;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        .email{
+            background-color: #242424;
+            color: white;
+            font-size: 1.1em;
+            padding: 1em 2em;
+            border-radius: 10em;
+            border: 4px solid #dadada;
+        }
+        .wp{
+            background-color: white;
+            color: #242424;
+            font-size: 1.1em;
+            padding: 1em 2em;
+            border-radius: 10em;
+            border: 4px solid #dadada;
+           
+        }
+    }
+}
+@media (min-width: 601px) {
+   .top_profile{
+    
+    nav{
+        background-color: #EEECEB;
+        padding: 0.4rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left-nav{
+            display: flex;
+            align-items: center;
+            gap: 0.8em;
+            
+            .gmail{
+                display: flex;
+                align-items: center;
+                padding: 0.3rem 0.6rem;
+                background-color: #c1c1c1;
+                gap: 0.6em;
+                border-radius: 8em;
+                p{
+                    font-size:0.8em ;
+                    font-family: "Source Code Pro", monospace;
+                }
+                button{
+                    font-size: 0.8em;
+                    background-color: white;
+                    padding: 0.4rem 1.6rem;
+                    border-radius: 10em;
+                    border: 3px solid #dadada;
+                }
+            }
+            button{
+                font-size: 0.8em;
+                background-color: white;
+                padding: 0.4rem 1.6rem;
+                border-radius: 10em;
+                border: 3px solid #dadada;
+                font-family: "Source Code Pro", monospace;
+            }
+        }
+        .right-nav{
+            
+            a{
+                font-size: 0.8em;
+                margin-left: 0.6em;
+                margin-right: 0.6em;
+                text-decoration: none;
+                color: #242424;
+                font-family: "Source Code Pro", monospace;
+            }
+        }
+    }
+    .marque{
+        gap: 6em;
+        .fa-github{
+            display: block;
+        }
+        .fa-wordpress{
+            display: block;
+        }
+        .fa-node{
+            display: block;
+        }
+        .fa-docker{
+            display: block;
+        }
+    }
+   } 
+  }
+  .section-two{
+    padding: 0 6rem;
+    .collab{
+        h1{
+            margin-top: 7rem;
+            margin-bottom: 7rem;
+        }
+        button{
+            color: #242424;
+            background-color: white;
+            padding: 1.5em 3em;
+            font-weight: 600;
+            border: 1px solid #242424;
+            border-radius: 10em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            position:absolute;
+        
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            rotate: (-15deg);
+                   
+        }
+    }
+    .split-div{
+        padding: 0 5rem;
+        padding-bottom: 5rem;
+        .div-one{
+            padding: 1em;
+            i{
+                font-size: 2em;
+                margin-top:4rem;
+                margin-bottom: 2.6rem;
+            }
+            h1{
+                font-size: 1.6em;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 0.7em;
+                color: #242424;
+                margin-bottom: 2.6rem;
+            }
+        }
+        .div-two{
+            padding: 1em;
+            i{
+                font-size: 2em;
+                margin-top:4rem;
+                margin-bottom: 2.6rem;
+            }
+            h1{
+                font-size: 1.6em;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 0.7em;
+                color: #242424;
+                margin-bottom: 2.6rem;
+            }
+        }
+        .div-three{
+            padding: 1em;
+            display: block;
+            i{
+                font-size: 2em;
+                margin-top:4rem;
+                margin-bottom: 2.6rem;
+            }
+            h1{
+                font-size: 1.6em;
+                font-weight: 400;
+                margin-bottom: 2rem;
+                font-family: "Source Code Pro", monospace;
+            }
+            p{
+                font-size: 0.7em;
+                color: #242424;
+                margin-bottom: 2.6rem;
+                font-family: "Source Code Pro", monospace;
+            }
+        }
+        .div-four{
+            display: block;
+            padding: 1em;
+            i{
+                font-size: 2em;
+                margin-top:4rem;
+                margin-bottom: 2.6rem;
+            }
+            h1{
+                font-size: 1.6em;
+                font-weight: 400;
+                margin-bottom: 2rem;
+                font-family: "Source Code Pro", monospace;
+            }
+            p{
+                font-size: 0.7em;
+                color: #242424;
+                margin-bottom: 2.6rem;
+                font-family: "Source Code Pro", monospace;
+            }
+        }
+    }
+  }
